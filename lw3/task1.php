@@ -5,5 +5,4 @@ while (strripos($text, '  '))
 {
     $text = str_replace('  ', ' ', $text);
 }
-echo $text
-?>
+echo $text;
