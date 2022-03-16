@@ -5,7 +5,7 @@ CONST
   Start_pos = 6;
 VAR 
   Parameters, Name: STRING;
-  CopyLen: integer;
+  CopyLen: INTEGER;
 BEGIN {HelloName}
   WRITELN('Content-Type: text/plain');
   WRITELN;

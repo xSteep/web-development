@@ -14,7 +14,7 @@ BEGIN {GetQueryStringParameter}
       IF POS('&', QueryString) <> 0
       THEN
         QueryString := COPY(QueryString, 1, POS('&', QueryString) - 1);
-      GetQueryStringParameter := QueryString
+        GetQueryStringParameter := QueryString
     END
   ELSE      
     GetQueryStringParameter := ''    
