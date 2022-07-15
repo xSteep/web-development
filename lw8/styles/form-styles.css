@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Roboto+Condensed&display=swap');
+
+.form
+{
+    margin: 0 641px 0 639px;
+}
+
+.form__images
+{
+    margin-left: 155px;
+}
+
+.form__header
+{
+    height: 31px;
+    text-align: center;
+    font: normal 500 26px 'Montserrat';
+}
+
+.form__fields
+{
+    margin: 33px 80px 91px 80px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fields__window
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 22px 27px 22px 28px;
+    border: 1.34888px solid #C0C0C0;
+    border-radius: 4px;
+    font: normal 500 18px 'Montserrat';
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fields__button
+{
+    background: #05090C;
+
+    border-radius: 6px;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fields__text
+{
+    color: #FFFFFF;
+
+    font: normal 500 18px 'Montserrat';
+    line-height: 16px;
+}
+
+.fields__jackdaw
+{
+    display: flex;
+    align-items: center;
+}
+
+.jackdaw__checkbox
+{
+    box-sizing: border-box;
+    height: 22px;
+    width: 22px;
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+}
+
+.jackdaw__text
+{
+    font: normal 400 16px 'Roboto Condensed';
+    padding-left: 10px;
+}
+
+.fields__arrow
+{
+    height: 13px;
+    width: 24px;
+    left: 0.000030517578125px;
+    top: 13.4888916015625px;
+    border-radius: 0px;
+
+    background: #ADADAD;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.form__fieldddd
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

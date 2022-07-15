@@ -1,42 +1,68 @@
 <?php
-header("Content-Type: text/plain");
-$password = isset($_GET['password']) ? $_GET['password'] : null;
-
-
-if ($password !== null)
+function getQueryStringParameter(string $name): ?string
 {
-    $password_len = strlen($password);
-    $digits_count = 0;
-    $uppers_count = 0;
-    $lowers_count = 0;
-    $duplicate_symbols = 0;
-
-
-    foreach (count_chars($password) as $symbol_count)
-    {
-        $symbol_count > 1 ? $duplicate_symbols += $symbol_count : null; // duplicate symbols
-    }
-
-
-    foreach (str_split($password , 1 ) as $symbol)
-    {
-        ctype_digit($symbol) ? $digits_count++ : null; // digits count
-        ctype_upper($symbol) ? $uppers_count++ : null; // uppers count
-        ctype_lower($symbol) ? $lowers_count++ : null; // lowers count
-    }
-
-
-    // Calculate
-    $strength = 0; // basic
-    $strength += $password_len * 4; // password_len
-    $strength += ($password_len - $uppers_count) * 2; // uppers count
-    $strength += ($password_len - $lowers_count) * 2; // lowers count
-    ctype_alpha($password) ? $strength -= $password_len : null; // only letters
-    ctype_digit($password) ? $strength -= $password_len : null; // only digits
-    $strength -= $duplicate_symbols; // duplicate symbols
-
-
-    // Output
-    echo "password= $password\nstrength= $strength";
+    return isset($_GET[$name]) ? $_GET[$name] : null;
 }
-?>
+
+$password = getQueryStringParameter('password'); 
+
+if (($password !== null) and (ctype_alnum($password)))
+{
+    $lenPasword = strlen($password);
+    $arrString = str_split($password);
+    $arrCountValuesString = array_count_values($arrString);
+    $count = 0;
+    $countNumber = 0;
+    $countUpperCase = 0;
+    $countLowerCase = 0;
+    $countRepeat = 0;
+
+    while ($count < $lenPasword)
+    {
+        if (is_numeric($arrString[$count]))
+        {
+            $countNumber = $countNumber + 1;
+        }
+        if (ctype_upper($arrString[$count]))
+        {
+            $countUpperCase = $countUpperCase + 1;
+        }
+        if (ctype_lower($arrString[$count]))
+        {
+            $countLowerCase = $countLowerCase + 1;
+        }
+        $count = $count + 1;
+    }  
+
+    $countValues = array_shift($arrCountValuesString);
+    while ($countValues !== null)
+    {
+        if ($countValues > 1)
+        {
+            $countRepeat = $countRepeat + $countValues; 
+        }
+        $countValues = array_shift($arrCountValuesString);  
+    }
+
+    if ($countUpperCase === 0)
+    {
+        $countUpperCase = $lenPasword;
+    }
+    if ($countLowerCase === 0)
+    {
+        $countLowerCase = $lenPasword;
+    }
+
+    $strength = 0;
+    $strength = 4 * $lenPasword + 4 * $countNumber + ($lenPasword - $countUpperCase) * 2 + ($lenPasword - $countLowerCase) * 2 - $countRepeat;
+    if ((ctype_alpha($password)) or (ctype_digit($password)))
+    {
+        $strength = $strength - $lenPasword;
+    } 
+    
+    echo $strength; 
+}
+else
+{
+    echo 'The password was entered incorrectly';  
+}
