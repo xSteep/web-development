@@ -1,0 +1,249 @@
+.header__image-dont
+{ 
+    width: 203px;
+    height: 37.69px;
+    left: 0px;
+    top: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30.8354px;
+    line-height: 122.33%;
+    letter-spacing: -0.045em;
+    color: #000000;
+}
+.header__top-panel
+{
+    width: 167px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+.header__first-button
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18.36px 34.425px;
+
+    width: 247px;
+    height: 55px;
+    left: 1433px;
+    top: 0px;
+
+    background: #05090C;
+    border-radius: 4.59px;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18.36px 34.425px;
+
+    width: 247px;
+    height: 55px;
+    left: 1433px;
+    top: 0px;
+    
+    background: #05090C;
+    border-radius: 4.59px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.header__title
+{
+    width: 745px;
+    height: 138.31px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 122.35%;
+    color: #000000;
+}
+.color-pink
+{
+    color: #EE58B6;    
+}
+.header__subtitle
+{
+    width: 545px;
+    height: 62px;
+    left: 0px;
+    top: 143px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.7);
+}
+.header__second-button
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18.36px 34.425px;
+
+    width: 332px;
+    height: 55px;
+    left: 0px;
+    top: 251px;
+
+    background: #05090C;
+    border-radius: 4.59px;
+  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.article__description
+{
+    width: 1920px;
+    height: 398px;
+    left: 1px;
+    top: 860px;
+    background: #000000;
+}
+
+.article__image
+{
+    left: 8.33%;
+    right: 8.72%;
+    top: 9.01%;
+    bottom: 8.04%;
+}
+
+.article__description-text
+{
+    width: 337px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.article__reasons
+{
+    width: 1920px;
+    background: #E5E5E5;
+}
+
+.article__reasons-title
+{ 
+    display: inline-block;
+    width: 376px;
+    height: 61px;
+    left: 562px;
+    top: 225.03px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 126.06%;
+    color: #000000;
+}
+
+.article__reasons-subtitle
+{
+    width: 574px;
+    height: 44px;
+    left: 0px;
+    top: 371.07px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.article-opportunities__title
+{
+    width: 553px;
+    height: 59px;
+    left: 290px;
+    top: 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    color: #000000;
+}
+.ticket
+{
+    width: 358px;
+    height: 190px;
+    left: 0px;
+    top: 0px;
+    background: #000000;
+    border-radius: 7.35723px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.ticket__text
+{
+    width: 269.77px;
+    height: 51.5px;
+    left: 39.74px;
+    top: 101.23px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.footer
+{
+    width: 1920px;
+    height: 108px;
+    left: 1px;
+    bottom: 0px;
+    background: #000000;
+}
+.footer__text
+{
+    width: 203px;
+    height: 37.69px;
+    left: 0px;
+    top: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30.8354px;
+    line-height: 122.33%;
+    letter-spacing: -0.045em;
+    color: #FFFFFF;
+}

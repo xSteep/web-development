@@ -1,16 +1,16 @@
 PROGRAM WorkWithQueryString(INPUT, OUTPUT);
 USES
   DOS;  
-FUNCTION GetQueryStringParameter(param: STRING): STRING;
+FUNCTION GetQueryStringParameter(Param: STRING): STRING;
 VAR
   QueryString: STRING;
 BEGIN {GetQueryStringParameter}
   QueryString := GetEnv('QUERY_STRING');
-  {Проверка вхождения в QueryString подстроки param= или &param=}
-  IF (POS(param + '=', QueryString) = 1) OR (POS('&' + param + '=', QueryString) <> 0)
+  {Проверка вхождения в QueryString подстроки Param= или &Param=}
+  IF (POS(Param + '=', QueryString) = 1) OR (POS('&' + Param + '=', QueryString) <> 0)
   THEN
     BEGIN
-      QueryString := COPY(QueryString, POS(param + '=', QueryString) + LENGTH(param + '='), 255);
+      QueryString := COPY(QueryString, POS(Param + '=', QueryString) + LENGTH(Param + '='), 255);
       IF POS('&', QueryString) <> 0
       THEN
         QueryString := COPY(QueryString, 1, POS('&', QueryString) - 1);
